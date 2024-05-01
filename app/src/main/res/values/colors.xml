@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#000000</color> <!-- Dark Black -->
+    <color name="colorPrimaryDark">#333333</color> <!-- Dark Gray -->
+    <color name="colorAccent">#833ab4</color> <!-- Instagram Purple -->
+    <color name="colorBackground">#1a1a1a</color> <!-- Dark Background -->
+    <color name="colorText">#ffffff</color> <!-- White Text -->
+</resources>

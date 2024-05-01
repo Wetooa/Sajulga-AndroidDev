@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/paneMain"
+    tools:context="calculator.Calculator">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/scrollHistory"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/txtCurrentNumber"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtFullEquation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="textEnd"
+                android:textSize="30dp" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/txtCurrentNumber"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:textSize="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollHistory"
+            app:layout_constraintVertical_bias="0.534" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:padding="10dp"
+            android:id="@+id/gridMain"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:columnCount="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rowCount="5">
+
+            <Button
+                android:id="@+id/btnClear"
+                app:layout_rowWeight="1"
+                android:text="CE"
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btnPercent"
+                app:layout_rowWeight="1"
+                android:text="%"
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                app:layout_rowWeight="1"
+                android:text="/"
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btnErase"
+                app:layout_rowWeight="1"
+
+                android:text="◀️"
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btn7"
+                app:layout_rowWeight="1"
+
+                android:text="7"
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:text="8"
+                app:layout_rowWeight="1"
+
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:text="9"
+                app:layout_rowWeight="1"
+
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                app:layout_rowWeight="1"
+                android:text="*"
+
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:text="4"
+                app:layout_rowWeight="1"
+
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btn5"
+                app:layout_rowWeight="1"
+                android:text="5"
+
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btn6"
+                app:layout_rowWeight="1"
+                android:text="6"
+                android:textAlignment="center"
+
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btnSub"
+                android:text="-"
+                app:layout_rowWeight="1"
+
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btn1"
+                app:layout_rowWeight="1"
+                android:text="1"
+                android:textAlignment="center"
+
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btn2"
+                app:layout_rowWeight="1"
+                android:text="2"
+
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btn3"
+                app:layout_rowWeight="1"
+                android:text="3"
+
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                app:layout_rowWeight="1"
+                android:text="+"
+                android:textAlignment="center"
+
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btn0"
+                app:layout_rowWeight="1"
+                android:text="0"
+
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btnPeriod"
+                app:layout_rowWeight="1"
+                android:text="."
+
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+
+            <Button
+                android:id="@+id/btnEquals"
+                app:layout_rowWeight="1"
+                android:text="="
+
+                android:textAlignment="center"
+                app:layout_columnWeight="1" />
+        </androidx.gridlayout.widget.GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="272dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

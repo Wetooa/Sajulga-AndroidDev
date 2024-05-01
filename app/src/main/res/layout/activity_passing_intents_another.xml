@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/paneMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="passing_intents.PassingIntentsAnother">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Information"
+            android:textSize="20dp" />
+
+
+        <GridLayout
+            android:paddingVertical="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="10">
+
+            <TextView
+                android:id="@+id/labelName"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Name (Firstname, Lastname): " />
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Name (Firstname, Lastname): " />
+
+            <TextView
+                android:id="@+id/labelGender"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Gender: " />
+
+            <TextView
+                android:id="@+id/textGender"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Gender: " />
+
+            <TextView
+                android:id="@+id/labelBirthdate"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Birthdate: " />
+
+            <TextView
+                android:id="@+id/textBirthdate"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Birthdate: " />
+
+            <TextView
+                android:id="@+id/labelNumber"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Phone Number (+63): " />
+
+            <TextView
+                android:id="@+id/textNumber"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Phone number" />
+
+            <TextView
+                android:id="@+id/labelAddress"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Address: " />
+
+            <TextView
+                android:id="@+id/textAddress"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Address: " />
+
+            <TextView
+                android:id="@+id/labelHobbies"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Hobbies: " />
+
+            <TextView
+                android:id="@+id/textHobbies"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Name (Firstname, Lastname): " />
+
+            <TextView
+                android:id="@+id/labelProgram"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Program: " />
+
+            <TextView
+                android:id="@+id/textProgram"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Year Level: " />
+
+            <TextView
+                android:id="@+id/labelYearLevel"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Year Level: " />
+
+            <TextView
+                android:id="@+id/textYearLevel"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Crush: " />
+
+            <TextView
+                android:id="@+id/labelCrush"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Crush: " />
+
+            <TextView
+                android:id="@+id/textCrush"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Height: " />
+
+            <TextView
+                android:id="@+id/labelHeight"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Height: " />
+
+            <TextView
+                android:id="@+id/textHeight"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Height" />
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
