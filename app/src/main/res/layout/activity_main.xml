@@ -29,13 +29,13 @@
             android:id="@+id/btnCalculator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button Exercise" />
+            android:text="Calculator" />
 
         <Button
             android:id="@+id/btnMidterm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Midtern" />
+            android:text="Midterm" />
 
         <Button
             android:id="@+id/btnMatch3"

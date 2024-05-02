@@ -58,22 +58,38 @@ public class PassingIntents extends AppCompatActivity {
         btnSubmit.setOnClickListener(v -> {
             Intent intent = new Intent(this, PassingIntentsAnother.class);
 
-            intent.putExtra("Name", editFirstname.getText() + " " + editLastname.getText());
+
 
             RadioButton rbGender = findViewById(radioGender.getCheckedRadioButtonId());
-            intent.putExtra("Gender", rbGender.getText());
 
-            intent.putExtra("Number", editNumber.getText());
-            intent.putExtra("Birthdate", editBirthdate.getText());
-            intent.putExtra("Email", editEmail.getText());
-            intent.putExtra("Address", editAddress.getText());
-            intent.putExtra("Hobbies", editHobbies.getText());
-            intent.putExtra("Program", editProgram.getText());
-            intent.putExtra("YearLevel", editYearLevel.getText());
-            intent.putExtra("Crush", editCrush.getText());
-            intent.putExtra("Height", editHeight.getText());
+            intent.putExtra("Name", editFirstname.getText() + " " + editLastname.getText());
+            intent.putExtra("Gender", rbGender.getText());
+            intent.putExtra("Number", editNumber.getText().toString());
+            intent.putExtra("Birthdate", editBirthdate.getText().toString());
+            intent.putExtra("Email", editEmail.getText().toString());
+            intent.putExtra("Address", editAddress.getText().toString());
+            intent.putExtra("Hobbies", editHobbies.getText().toString());
+            intent.putExtra("Program", editProgram.getText().toString());
+            intent.putExtra("YearLevel", editYearLevel.getText().toString());
+            intent.putExtra("Crush", editCrush.getText().toString());
+            intent.putExtra("Height", editHeight.getText().toString());
 
             startActivity(intent);
+        });
+
+
+        btnClear.setOnClickListener(v -> {
+            editFirstname.setText("");
+            editLastname.setText("");
+            editNumber.setText("");
+            editBirthdate.setText("");
+            editEmail.setText("");
+            editAddress.setText("");
+            editHobbies.setText("");
+            editProgram.setText("");
+            editYearLevel.setText("");
+            editCrush.setText("");
+            editHeight.setText("");
         });
     }
 }

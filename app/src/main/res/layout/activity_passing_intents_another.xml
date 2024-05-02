@@ -66,6 +66,18 @@
                 android:text="Birthdate: " />
 
             <TextView
+                android:id="@+id/labelEmail"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Email: " />
+
+            <TextView
+                android:id="@+id/textEmail"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="Email: " />
+
+            <TextView
                 android:id="@+id/labelNumber"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"

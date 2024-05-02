@@ -12,6 +12,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.sajulga_androiddev.R;
 
+import java.security.Key;
+
 public class PassingIntentsAnother extends AppCompatActivity {
 
     @Override
@@ -29,7 +31,9 @@ public class PassingIntentsAnother extends AppCompatActivity {
 
         for (String key : PassingIntents.keys) {
             TextView element = findViewById(this.getResources().getIdentifier("text" + key, "id", this.getPackageName()));
-            element.setText(intent.getStringExtra(key));
+            String curr = intent.getStringExtra(key);
+            System.out.println(curr);
+            element.setText(curr);
         }
 
 
