@@ -1,0 +1,21 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemBg"
+        android:title="@string/change_bg" />
+    <item
+        android:id="@+id/itemShape"
+        android:title="@string/change_shape" />
+    <item
+        android:id="@+id/itemText"
+        android:title="@string/change_text" />
+    <item
+        android:id="@+id/itemOpacity"
+        android:title="@string/change_opacity" />
+    <item
+        android:id="@+id/itemFontSize"
+        android:title="@string/change_font_size" />
+    <item
+        android:id="@+id/itemExit"
+        android:title="@string/exit" />
+</menu>

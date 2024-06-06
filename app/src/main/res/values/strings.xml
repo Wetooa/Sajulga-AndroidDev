@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Sajulga-AndroidDev</string>
+    <string name="change_bg">Change BG</string>
+    <string name="change_shape">Change Shape</string>
+    <string name="change_text">Change Text</string>
+    <string name="change_opacity">Change Opacity</string>
+    <string name="change_font_size">Change Font Size</string>
+    <string name="exit">Exit</string>
 </resources>

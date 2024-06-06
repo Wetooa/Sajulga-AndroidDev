@@ -16,6 +16,7 @@ import button_exercise.ButtonExercise;
 import calculator.Calculator;
 import layout_exercise.LayoutExercise;
 import match3.Match3;
+import menu.Menu;
 import passing_intents.PassingIntents;
 
 public class MainActivity extends AppCompatActivity {
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         createLink(btnMatch3, Match3.class);
         createLink(btnPassingIntents, PassingIntents.class);
 //        createLink(btnFragments, LayoutExercise.class);
-//        createLink(btnMenus, Exercise.class);
+        createLink(btnMenus, Menu.class);
 
     }
 
